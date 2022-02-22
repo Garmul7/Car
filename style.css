@@ -1,0 +1,125 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.gui {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1em;
+  padding: 1em;
+}
+
+.first-screen,
+.second-screen {
+  height: 700px;
+  border-radius: 16px;
+  background-color: rgb(27, 26, 26);
+  display: grid;
+  border-color: black;
+}
+
+.second-screen {
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.second-screen-icons {
+  height:135px;
+  align-content: center;
+  display:block;
+  margin:auto;
+}
+
+.second-screen-icons > img:hover {
+  cursor: pointer;
+}
+
+.first-screen {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.messageposition {
+  margin: 30px;
+  border-radius: 10px;
+  width:100%;
+  height:100%;
+  background-color: rgb(18, 20, 18);
+  grid-column-start: 1; 
+  grid-column-end: 3;
+  overflow: hidden;
+  text-overflow: clip;
+  line-height: 8em;
+  height: 16em;
+}
+
+.speedposition {
+  margin-left: 20px;
+  position:absolute; 
+  border-top: 5px solid white;
+  border-radius: 40px;
+  width:25%;
+  top:390px;
+}
+
+.gearposition {
+  margin-left: 20px;
+  position:absolute; 
+  border-top: 5px solid white;
+  border-radius: 40px;
+  width:25%;
+  top:540px;
+}
+
+.tacho2 {
+  position: absolute;
+  top:320px;
+  left:25%;
+  min-height: 350px;
+  max-height: 500px;
+  max-width: 600px;
+  width:29%;
+}
+
+.tacho1 {
+  position: absolute;
+  top:320px;
+  left:25%;
+  min-height: 350px;
+  max-height: 500px;
+  max-width: 600px;
+  width: 29%;
+  transform-origin: 50% 57%;
+  transform: rotate(180deg);
+}
+
+.rpmposition {
+  position: absolute;
+  top:600px;
+  left: 40%;
+  font-size: 120%;
+}
+.controller {
+  padding: 1em;
+  width: 550px;
+}
+
+p {
+  color: #fff;
+  font-size: 85px;
+  text-align: center;
+}
+
+.clock {
+  position:absolute;
+  right:3%;
+  top:2%;
+  color:black;
+  background-color: rgb(255,255,255,0.3);
+  border-radius: 16px;
+  padding: 2px;
+}
+
+
